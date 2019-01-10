@@ -82,7 +82,7 @@ app.get("/", (req, res) => res.status(200).sendFile(path.resolve(__dirname, "ind
 app.use("/", express.static(staticDir));
 
 const args = process.argv.slice(2);
-const port = parseInt(args[0] || "49001");
+const port = parseInt(args[0] || "3000");
 
 const server = app.listen(port, function() {
     const host = server.address().address;
