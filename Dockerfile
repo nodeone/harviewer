@@ -1,4 +1,4 @@
-FROM node:6-alpine
+FROM node:11.6-alpine
 
 ENV NODE_ENV="production"
 RUN set -x \
